@@ -1,0 +1,64 @@
+@import url(./reset.css);
+
+body{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.main-navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-navigation-link,
+.navigation-products-link,
+.navigation-products-sub-link{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.main-navigation-link:hover,
+.navigation-products-link:hover,
+.navigation-products-sub-link:hover{
+    background-color: blue;
+    color: black;
+}
+
+.main-navigation-link-products-down{
+    position: relative;
+}
+
+.navigation-products{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 130%;
+
+}
+
+.navigation-products-link-products2-down{
+    position: relative;
+}
+
+.navigation-products-sub{
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.main-navigation-link-products-down:hover .navigation-products,
+.navigation-products-link-products2-down:hover .navigation-products-sub{
+    display: block;
+    
+}
